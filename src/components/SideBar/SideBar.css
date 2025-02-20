@@ -1,0 +1,28 @@
+:root{
+    --sidebar-pading:  max(.75vw, 9px);
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    height: 100vh
+}
+
+.sidebar h1 {
+    margin: 0;
+    font-size: 1.6vw;
+    padding: var(--sidebar-pading);
+}
+
+.sidebar a {
+    padding: var(--sidebar-pading);
+    display: block;
+}
+
+.sidebar a:hover{
+    cursor: pointer;
+}
+
+.active {
+    background-color: #50bfa5;
+    color: white;
+}

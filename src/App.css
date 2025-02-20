@@ -1,0 +1,12 @@
+#main-app {
+    display: flex;
+    height: 100vh;
+}
+
+#main-app__left {
+    width: 13vw;
+}
+
+#main-app__right {
+    width: 87vw;
+}

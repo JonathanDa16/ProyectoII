@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+form {
+    border-radius: 13px;
+
+    box-shadow: 3px 3px 12px -2px rgba(0,0,0,0.75);
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+
+    width: 30vw;
+}
+
+input {
+    padding: 5px;
+    border-radius: 7px;
+    max-width: 200px;
+    width: 20vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+button {
+    margin-bottom: 1vw;
+
+    background-color: #184655;
+    color: white;
+
+    padding: 5px;
+    border-radius: 7px;
+    max-width: 200px;
+    width: 20vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.left {
+    background-image: url('./wallpaper.svg');
+    background-size: cover; /* Ajusta el SVG al tamaño del div */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    background-position: center; /* Centra el SVG */
+    width: 45%;
+    height: 100%;
+}
+
+.right {
+    background-color: #50bfa5;
+    width: 55%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}

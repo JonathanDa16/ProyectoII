@@ -1,0 +1,31 @@
+.todo-modal {
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: white;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    padding: max(1.5vw, 10px);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+.todo-modal__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}

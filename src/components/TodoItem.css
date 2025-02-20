@@ -1,0 +1,29 @@
+.todo-item__container {
+    width: 100%;
+}
+
+.todo-item__title {
+    font-weight: bold;
+}
+
+.todo-item__title--completed {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.todo-item__checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.todo-item__checkbox:checked {
+    background-color: #50bfa5;
+}
