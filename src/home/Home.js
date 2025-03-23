@@ -1,9 +1,11 @@
+// Home.js
 import React from 'react';
 import './Home.css';
 import { 
   AppBar, Toolbar, IconButton, Typography, Button, Container, Box, Grid, 
-  Card, CardMedia, CardContent, CardActions, Paper, Link, Divider 
+  Card, CardMedia, CardContent, CardActions, Paper, Link 
 } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import wallpaper from '../assets/wallpaper.jpeg';
 import wallpaperProgramacion from '../assets/wallpaper_programacion.jpg';
@@ -92,7 +94,9 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Ver Curso</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/curso/programacion">
+                  Ver Curso
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -114,7 +118,9 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Ver Curso</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/curso/diseno">
+                  Ver Curso
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -136,7 +142,9 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Ver Curso</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/curso/marketing">
+                  Ver Curso
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -158,7 +166,9 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Ver Curso</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/curso/web">
+                  Ver Curso
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -217,7 +227,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Leer Más</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/blog/python">Leer Más</Button>
               </CardActions>
             </Card>
           </Grid>
@@ -234,11 +244,11 @@ function Home() {
                   Como quitar el fondo de una imagen en Photoshop
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                En este tutorial aprenderemos a como quitar el fondo de una imagen en Photoshop.
+                  En este tutorial aprenderemos a como quitar el fondo de una imagen en Photoshop.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Leer Más</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/blog/photoshop">Leer Más</Button>
               </CardActions>
             </Card>
           </Grid>
@@ -255,11 +265,11 @@ function Home() {
                   Contruye una API en .NET en 10 minutos
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                En este tutorial aprenderemos a como contruir una API en .NET en 10 minutos.
+                  En este tutorial aprenderemos a como contruir una API en .NET en 10 minutos.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Leer Más</Button>
+                <Button size="small" color="primary" component={RouterLink} to="/blog/dotnet">Leer Más</Button>
               </CardActions>
             </Card>
           </Grid>
