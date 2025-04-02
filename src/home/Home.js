@@ -1,12 +1,13 @@
-// Home.js
 import React from 'react';
 import './Home.css';
 import { 
-  AppBar, Toolbar, IconButton, Typography, Button, Container, Box, Grid, 
+  AppBar, Toolbar, Typography, Button, Container, Box, Grid, 
   Card, CardMedia, CardContent, CardActions, Paper, Link 
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
+
 import MenuIcon from '@mui/icons-material/Menu';
+
 import wallpaper from '../assets/wallpaper.jpeg';
 import wallpaperProgramacion from '../assets/wallpaper_programacion.jpg';
 import wallpaperDisenoGrafico from '../assets/wallpaper_diseño grafico.webp';
@@ -23,21 +24,27 @@ function Home() {
       {/* Header - Barra de navegación */}
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Estudiar Es Gratis
           </Typography>
-          <Button color="inherit">Inicio</Button>
-          <Button color="inherit">Cursos</Button>
-          <Button color="inherit">Recursos</Button>
-          <Button color="inherit">Sobre Nosotros</Button>
+          <Link href="#inicio" color="inherit" underline="none" sx={{ mx: 1 }}>
+            Inicio
+          </Link>
+          <Link href="#cursos" color="inherit" underline="none" sx={{ mx: 1 }}>
+            Cursos
+          </Link>
+          <Link href="#recursos" color="inherit" underline="none" sx={{ mx: 1 }}>
+            Recursos
+          </Link>
+          <Link href="#sobre-nosotros" color="inherit" underline="none" sx={{ mx: 1 }}>
+            Sobre Nosotros
+          </Link>
         </Toolbar>
       </AppBar>
 
       {/* Hero Section - Bienvenida con imagen de fondo */}
       <Box
+        id="inicio"
         sx={{
           backgroundImage: `url(${wallpaper})`,
           backgroundSize: 'cover',
@@ -58,7 +65,7 @@ function Home() {
       </Box>
 
       {/* Sección Sobre Nosotros */}
-      <Container sx={{ py: 5 }}>
+      <Container id="sobre-nosotros" sx={{ py: 5 }}>
         <Typography variant="h4" component="h2" gutterBottom>
           Sobre Nosotros
         </Typography>
@@ -71,12 +78,11 @@ function Home() {
       </Container>
 
       {/* Sección de Cursos */}
-      <Container sx={{ py: 5, backgroundColor: '#f5f5f5' }} maxWidth="lg">
+      <Container id="cursos" sx={{ py: 5, backgroundColor: '#f5f5f5' }} maxWidth="lg">
         <Typography variant="h4" component="h2" gutterBottom align="center">
           Nuestros Cursos
         </Typography>
         <Grid container spacing={4}>
-          {/* Curso 1 */}
           <Grid item xs={12} sm={6} md={4}>
             <Card>
               <CardMedia
@@ -100,7 +106,6 @@ function Home() {
               </CardActions>
             </Card>
           </Grid>
-          {/* Curso 2 */}
           <Grid item xs={12} sm={6} md={4}>
             <Card>
               <CardMedia
@@ -124,7 +129,6 @@ function Home() {
               </CardActions>
             </Card>
           </Grid>
-          {/* Curso 3 */}
           <Grid item xs={12} sm={6} md={4}>
             <Card>
               <CardMedia
@@ -148,7 +152,6 @@ function Home() {
               </CardActions>
             </Card>
           </Grid>
-          {/* Curso 4 */}
           <Grid item xs={12} sm={6} md={4}>
             <Card>
               <CardMedia
@@ -204,8 +207,8 @@ function Home() {
         </Grid>
       </Container>
 
-      {/* Sección Blog / Últimas Noticias */}
-      <Container sx={{ py: 5 }}>
+      {/* Sección Recursos Educativos */}
+      <Container id="recursos" sx={{ py: 5 }}>
         <Typography variant="h4" component="h2" gutterBottom align="center">
           Recursos Educativos
         </Typography>
@@ -293,7 +296,7 @@ function Home() {
                 Facebook
               </Link>
               <Link href="#" color="inherit" sx={{ mx: 1 }}>
-                Twitter
+                X
               </Link>
               <Link href="#" color="inherit" sx={{ mx: 1 }}>
                 Instagram
